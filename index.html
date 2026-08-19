@@ -1,0 +1,523 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="INFO CENTER — assistência técnica especializada em celulares, computadores e notebooks. Venda de aparelhos, acessórios e serviços de informática com garantia. Solicite seu orçamento pelo WhatsApp." />
+    <meta name="theme-color" content="#0a0a0a" />
+    <title>INFO CENTER — Assistência Técnica e Tecnologia</title>
+  </head>
+  <body>
+    <div id="app">
+      <header class="header" id="header">
+        <div class="container header__inner">
+          <a href="#inicio" class="brand">
+            <img class="brand__logo" data-brand-logo="full" alt="INFO CENTER" />
+          </a>
+
+          <nav class="nav" id="nav">
+            <ul class="nav__list">
+              <li><a href="#inicio" class="nav__link">Início</a></li>
+              <li><a href="#servicos" class="nav__link">Serviços</a></li>
+              <li><a href="#sobre" class="nav__link">Sobre</a></li>
+              <li><a href="#contato" class="nav__link">Contato</a></li>
+            </ul>
+          </nav>
+
+          <div class="header__actions">
+            <a href="#" class="btn btn--primary btn--sm" data-wa-key="geral" aria-label="Falar no WhatsApp">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.6-.8-1.9-.9-.2-.1-.4-.1-.6.1-.2.3-.7.9-.8 1-.2.2-.3.2-.5.1-.3-.1-1.2-.4-2.2-1.4-.8-.7-1.4-1.6-1.5-1.9-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.1.2-.3.2-.4.1-.2 0-.3 0-.5-.1-.1-.6-1.4-.8-1.9-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.1 0 1.2.9 2.4 1 2.6.1.2 1.8 2.8 4.4 3.8.6.3 1.1.4 1.5.5.6.2 1.2.2 1.6.1.5-.1 1.6-.6 1.8-1.3.2-.6.2-1.1.2-1.2-.1-.2-.3-.2-.5-.3z"/><path d="M12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.6 1.4 5.1L2 22l5.1-1.3C8.5 21.5 10.2 22 12 22c5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.2c-1.6 0-3.2-.4-4.5-1.2l-.3-.2-3.3.9.9-3.2-.2-.3c-.9-1.4-1.4-3-1.4-4.7 0-4.6 3.8-8.4 8.4-8.4 4.6 0 8.4 3.8 8.4 8.4 0 4.7-3.7 8.4-8.4 8.4z"/></svg>
+              <span>Falar no WhatsApp</span>
+            </a>
+            <button class="nav__toggle" id="navToggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav">
+              <span></span><span></span><span></span>
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <!-- HERO -->
+        <section class="hero" id="inicio">
+          <div class="hero__glow" aria-hidden="true"></div>
+          <div class="container hero__inner">
+            <div class="hero__content">
+              <span class="tag">Tecnologia &amp; Assistência Técnica</span>
+              <h1 class="hero__title">
+                Seu celular ou computador em <span class="text-accent">boas mãos</span>.
+              </h1>
+              <p class="hero__text">
+                Assistência técnica especializada para celulares, computadores e notebooks.
+                Diagnóstico preciso, atendimento transparente e soluções rápidas para você.
+              </p>
+              <div class="hero__actions">
+                <a href="#" class="btn btn--primary btn--lg" data-wa-key="geral">Solicitar orçamento</a>
+                <a href="#" class="btn btn--ghost btn--lg" data-wa-key="geral">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.6-.8-1.9-.9-.2-.1-.4-.1-.6.1-.2.3-.7.9-.8 1-.2.2-.3.2-.5.1-.3-.1-1.2-.4-2.2-1.4-.8-.7-1.4-1.6-1.5-1.9-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.1.2-.3.2-.4.1-.2 0-.3 0-.5-.1-.1-.6-1.4-.8-1.9-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.1 0 1.2.9 2.4 1 2.6.1.2 1.8 2.8 4.4 3.8.6.3 1.1.4 1.5.5.6.2 1.2.2 1.6.1.5-.1 1.6-.6 1.8-1.3.2-.6.2-1.1.2-1.2-.1-.2-.3-.2-.5-.3z"/><path d="M12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.6 1.4 5.1L2 22l5.1-1.3C8.5 21.5 10.2 22 12 22c5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.2c-1.6 0-3.2-.4-4.5-1.2l-.3-.2-3.3.9.9-3.2-.2-.3c-.9-1.4-1.4-3-1.4-4.7 0-4.6 3.8-8.4 8.4-8.4 4.6 0 8.4 3.8 8.4 8.4 0 4.7-3.7 8.4-8.4 8.4z"/></svg>
+                  <span>Falar no WhatsApp</span>
+                </a>
+              </div>
+
+              <ul class="hero__badges">
+                <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none" aria-hidden="true"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Diagnóstico técnico</li>
+                <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none" aria-hidden="true"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Garantia nos serviços</li>
+                <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none" aria-hidden="true"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Peças de qualidade</li>
+              </ul>
+            </div>
+
+            <div class="hero__visual" aria-hidden="true">
+              <div class="device-card">
+                <div class="device-card__dot"></div>
+                <div class="device-card__row">
+                  <svg viewBox="0 0 24 24" width="26" height="26" fill="none"><rect x="7" y="2" width="10" height="20" rx="2.2" stroke="currentColor" stroke-width="1.6"/><path d="M11 19h2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+                  <div class="device-card__bars">
+                    <span></span><span></span><span></span>
+                  </div>
+                </div>
+                <div class="device-card__row">
+                  <svg viewBox="0 0 24 24" width="26" height="26" fill="none"><rect x="2.5" y="4" width="19" height="13" rx="1.6" stroke="currentColor" stroke-width="1.6"/><path d="M8 20.5h8M12 17v3.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+                  <div class="device-card__bars">
+                    <span></span><span></span><span></span>
+                  </div>
+                </div>
+                <div class="device-card__scan">
+                  <span>Diagnóstico em andamento</span>
+                  <div class="device-card__track"><div class="device-card__fill"></div></div>
+                </div>
+              </div>
+              <div class="floating-chip floating-chip--top">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none"><path d="M12 2 2 7v6c0 5 4 8.5 10 9 6-.5 10-4 10-9V7l-10-5Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="m9 12 2 2 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Garantia inclusa
+              </div>
+              <div class="floating-chip floating-chip--bottom">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+                Reparo rápido
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SERVIÇOS -->
+        <section class="section" id="servicos">
+          <div class="container">
+            <div class="section__head">
+              <span class="tag">O que fazemos</span>
+              <h2 class="section__title">Soluções completas em tecnologia</h2>
+              <p class="section__text">
+                Do reparo ao aparelho novo, cuidamos de cada etapa com técnicos especializados
+                e peças de qualidade.
+              </p>
+            </div>
+
+            <div class="grid grid--4">
+              <article class="card">
+                <div class="card__icon">
+                  <svg viewBox="0 0 24 24" width="26" height="26" fill="none"><path d="M14.7 6.3 17 4a3 3 0 0 1 4 4l-2.3 2.3M9.3 17.7 7 20a3 3 0 0 1-4-4l2.3-2.3M8.5 15.5l7-7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="m14 5 5 5M5 14l5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+                </div>
+                <h3 class="card__title">Assistência Técnica</h3>
+                <p class="card__text">
+                  Diagnóstico e reparo especializado para celulares, computadores e notebooks,
+                  com transparência em cada etapa do processo.
+                </p>
+                <a href="#" class="card__cta" data-wa-key="assistenciaTecnica">
+                  Solicitar orçamento
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+              </article>
+
+              <article class="card">
+                <div class="card__icon">
+                  <svg viewBox="0 0 24 24" width="26" height="26" fill="none"><rect x="7" y="2" width="10" height="20" rx="2.2" stroke="currentColor" stroke-width="1.6"/><path d="M11 19h2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+                </div>
+                <h3 class="card__title">Celulares</h3>
+                <p class="card__text">
+                  Venda de smartphones novos e seminovos, troca de telas, baterias e reparos
+                  de placa com garantia.
+                </p>
+                <a href="#" class="card__cta" data-wa-key="celulares">
+                  Solicitar orçamento
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+              </article>
+
+              <article class="card">
+                <div class="card__icon">
+                  <svg viewBox="0 0 24 24" width="26" height="26" fill="none"><rect x="2.5" y="4" width="19" height="13" rx="1.6" stroke="currentColor" stroke-width="1.6"/><path d="M8 20.5h8M12 17v3.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+                </div>
+                <h3 class="card__title">Informática</h3>
+                <p class="card__text">
+                  Formatação, manutenção preventiva, upgrade de peças e suporte completo para
+                  computadores e notebooks.
+                </p>
+                <a href="#" class="card__cta" data-wa-key="informatica">
+                  Solicitar orçamento
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+              </article>
+
+              <article class="card">
+                <div class="card__icon">
+                  <svg viewBox="0 0 24 24" width="26" height="26" fill="none"><rect x="4" y="9" width="4" height="7" rx="1.2" stroke="currentColor" stroke-width="1.6"/><rect x="16" y="9" width="4" height="7" rx="1.2" stroke="currentColor" stroke-width="1.6"/><path d="M6 9V8a6 6 0 0 1 12 0v1" stroke="currentColor" stroke-width="1.6"/></svg>
+                </div>
+                <h3 class="card__title">Acessórios</h3>
+                <p class="card__text">
+                  Capinhas, películas, carregadores, fones e periféricos originais e
+                  compatíveis para todos os dispositivos.
+                </p>
+                <a href="#" class="card__cta" data-wa-key="acessorios">
+                  Solicitar orçamento
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <!-- CONFIANÇA / DIFERENCIAIS -->
+        <section class="section section--dark">
+          <div class="container">
+            <div class="section__head">
+              <span class="tag">Confiança</span>
+              <h2 class="section__title">Por que escolher a INFO CENTER?</h2>
+            </div>
+
+            <div class="grid grid--4">
+              <div class="feature">
+                <div class="feature__icon">
+                  <svg viewBox="0 0 24 24" width="24" height="24" fill="none"><path d="M4 20c0-3.3 3.6-5 8-5s8 1.7 8 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="1.6"/></svg>
+                </div>
+                <h3 class="feature__title">Atendimento especializado</h3>
+                <p class="feature__text">Equipe técnica preparada para orientar você em cada decisão.</p>
+              </div>
+
+              <div class="feature">
+                <div class="feature__icon">
+                  <svg viewBox="0 0 24 24" width="24" height="24" fill="none"><path d="M12 3v3M12 18v3M3 12h3M18 12h3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><circle cx="12" cy="12" r="6.5" stroke="currentColor" stroke-width="1.6"/><path d="M12 12 15 9.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+                </div>
+                <h3 class="feature__title">Diagnóstico técnico</h3>
+                <p class="feature__text">Identificação precisa do problema antes de qualquer reparo.</p>
+              </div>
+
+              <div class="feature">
+                <div class="feature__icon">
+                  <svg viewBox="0 0 24 24" width="24" height="24" fill="none"><path d="m12 2.5 8.5 3.4v5.4c0 5-3.5 8.4-8.5 10.2C7 20.7 3.5 17.3 3.5 12.3V5.9L12 2.5Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+                </div>
+                <h3 class="feature__title">Qualidade e confiança</h3>
+                <p class="feature__text">Peças selecionadas e processos que priorizam a durabilidade.</p>
+              </div>
+
+              <div class="feature">
+                <div class="feature__icon">
+                  <svg viewBox="0 0 24 24" width="24" height="24" fill="none"><path d="M12 2 2 7v6c0 5 4 8.5 10 9 6-.5 10-4 10-9V7l-10-5Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="m9 12 2 2 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+                <h3 class="feature__title">Garantia nos serviços</h3>
+                <p class="feature__text">Tranquilidade após o reparo, com garantia em todo serviço realizado.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SOBRE -->
+        <section class="section" id="sobre">
+          <div class="container about">
+            <div class="about__content">
+              <span class="tag">Sobre a INFO CENTER</span>
+              <h2 class="section__title section__title--left">
+                Referência em tecnologia, assistência técnica e conectividade
+              </h2>
+              <p class="section__text section__text--left">
+                A INFO CENTER nasceu para ser o ponto de confiança de quem precisa de soluções em
+                tecnologia.
+              </p>
+              <p class="section__text section__text--left">
+                Trabalhamos com assistência técnica para celulares, computadores e notebooks,
+                além de venda de aparelhos e acessórios.
+              </p>
+              <p class="section__text section__text--left">
+                Nosso compromisso é oferecer diagnóstico transparente, atendimento próximo e
+                serviços realizados com qualidade e responsabilidade.
+              </p>
+
+              <div class="about__stats">
+                <div class="stat">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none"><path d="M14.7 6.3 17 4a3 3 0 0 1 4 4l-2.3 2.3M9.3 17.7 7 20a3 3 0 0 1-4-4l2.3-2.3M8.5 15.5l7-7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  <span>Reparo especializado</span>
+                </div>
+                <div class="stat">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none"><path d="M12 2 2 7v6c0 5 4 8.5 10 9 6-.5 10-4 10-9V7l-10-5Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="m9 12 2 2 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  <span>Serviços com garantia</span>
+                </div>
+                <div class="stat">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none"><path d="M4 20c0-3.3 3.6-5 8-5s8 1.7 8 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="1.6"/></svg>
+                  <span>Atendimento próximo</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="about__visual" aria-hidden="true">
+              <div class="orbit-card">
+                <div class="orbit-card__ring"></div>
+                <img class="orbit-card__icon" data-brand-logo="icon" alt="" />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- GALERIA / ESPAÇO -->
+        <section class="section" id="galeria">
+          <div class="container">
+            <div class="section__head">
+              <span class="tag">Nosso espaço</span>
+              <h2 class="section__title">Conheça a INFO CENTER</h2>
+              <p class="section__text">
+                Conheça um pouco do nosso espaço e do trabalho que realizamos todos os dias.
+              </p>
+            </div>
+
+            <div class="grid grid--2 gallery">
+              <article class="gallery-card">
+                <div class="gallery-card__media">
+                  <img
+                    data-unit-photo="corregoDoOuro"
+                    alt="Fachada da unidade INFO CENTER Córrego do Ouro"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <div class="gallery-card__overlay">
+                    <span class="gallery-card__unit">INFO CENTER</span>
+                    <h3 class="gallery-card__name" data-unit="corregoDoOuro" data-unit-field="shortName">
+                      Córrego do Ouro
+                    </h3>
+                  </div>
+                </div>
+                <div class="gallery-card__info">
+                  <p class="unit-card__line">
+                    <span aria-hidden="true">📍</span>
+                    <span data-unit="corregoDoOuro" data-unit-field="address">
+                      Av. Miguel Peixoto Guimarães, nº 349 - Córrego do Ouro, Macaé - RJ
+                    </span>
+                  </p>
+                  <p class="unit-card__line">
+                    <span aria-hidden="true">📱</span>
+                    <span data-unit="corregoDoOuro" data-unit-field="phoneDisplay">(22) 98809-8818</span>
+                  </p>
+                </div>
+              </article>
+
+              <article class="gallery-card">
+                <div class="gallery-card__media">
+                  <img
+                    data-unit-photo="trapiche"
+                    alt="Fachada da unidade INFO CENTER Trapiche"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <div class="gallery-card__overlay">
+                    <span class="gallery-card__unit">INFO CENTER</span>
+                    <h3 class="gallery-card__name" data-unit="trapiche" data-unit-field="shortName">Trapiche</h3>
+                  </div>
+                </div>
+                <div class="gallery-card__info">
+                  <p class="unit-card__line">
+                    <span aria-hidden="true">📍</span>
+                    <span data-unit="trapiche" data-unit-field="address">
+                      RJ-162, nº 767 — Trapiche, Rio de Janeiro - RJ
+                    </span>
+                  </p>
+                  <p class="unit-card__line">
+                    <span aria-hidden="true">📌</span>
+                    <span data-unit="trapiche" data-unit-field="reference">
+                      Em frente à Madeireira Paraíso e ao Campo de Futebol
+                    </span>
+                  </p>
+                  <p class="unit-card__line">
+                    <span aria-hidden="true">📱</span>
+                    <span data-unit="trapiche" data-unit-field="phoneDisplay">(22) 98159-3659</span>
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <!-- UNIDADES -->
+        <section class="section section--dark" id="contato">
+          <div class="container">
+            <div class="section__head">
+              <span class="tag">Nossas unidades</span>
+              <h2 class="section__title">Encontre a INFO CENTER mais próxima de você</h2>
+              <p class="section__text">
+                Escolha a unidade mais próxima e fale diretamente com nossa equipe.
+              </p>
+            </div>
+
+            <div class="grid grid--2 units">
+              <article class="unit-card">
+                <h3 class="unit-card__title" data-unit="corregoDoOuro" data-unit-field="name">
+                  INFO CENTER Córrego do Ouro
+                </h3>
+                <p class="unit-card__line">
+                  <span aria-hidden="true">📍</span>
+                  <span data-unit="corregoDoOuro" data-unit-field="address">
+                    Av. Miguel Peixoto Guimarães, nº 349 - Córrego do Ouro, Macaé - RJ
+                  </span>
+                </p>
+                <p class="unit-card__line">
+                  <span aria-hidden="true">📱</span>
+                  <span data-unit="corregoDoOuro" data-unit-field="phoneDisplay">(22) 98809-8818</span>
+                </p>
+                <div class="unit-card__actions">
+                  <a href="#" class="btn btn--primary" data-unit="corregoDoOuro" data-unit-wa-link>
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.6-.8-1.9-.9-.2-.1-.4-.1-.6.1-.2.3-.7.9-.8 1-.2.2-.3.2-.5.1-.3-.1-1.2-.4-2.2-1.4-.8-.7-1.4-1.6-1.5-1.9-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.1.2-.3.2-.4.1-.2 0-.3 0-.5-.1-.1-.6-1.4-.8-1.9-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.1 0 1.2.9 2.4 1 2.6.1.2 1.8 2.8 4.4 3.8.6.3 1.1.4 1.5.5.6.2 1.2.2 1.6.1.5-.1 1.6-.6 1.8-1.3.2-.6.2-1.1.2-1.2-.1-.2-.3-.2-.5-.3z"/><path d="M12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.6 1.4 5.1L2 22l5.1-1.3C8.5 21.5 10.2 22 12 22c5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.2c-1.6 0-3.2-.4-4.5-1.2l-.3-.2-3.3.9.9-3.2-.2-.3c-.9-1.4-1.4-3-1.4-4.7 0-4.6 3.8-8.4 8.4-8.4 4.6 0 8.4 3.8 8.4 8.4 0 4.7-3.7 8.4-8.4 8.4z"/></svg>
+                    <span>Falar no WhatsApp</span>
+                  </a>
+                  <a href="#" class="btn btn--ghost" data-unit="corregoDoOuro" data-unit-maps-link>
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" aria-hidden="true"><path d="M12 21s7-6.4 7-11.5A7 7 0 0 0 5 9.5C5 14.6 12 21 12 21Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><circle cx="12" cy="9.5" r="2.4" stroke="currentColor" stroke-width="1.6"/></svg>
+                    <span>Como chegar</span>
+                  </a>
+                </div>
+              </article>
+
+              <article class="unit-card">
+                <h3 class="unit-card__title" data-unit="trapiche" data-unit-field="name">
+                  INFO CENTER Trapiche
+                </h3>
+                <p class="unit-card__line">
+                  <span aria-hidden="true">📍</span>
+                  <span data-unit="trapiche" data-unit-field="address">RJ-162, nº 767 — Trapiche, Rio de Janeiro - RJ</span>
+                </p>
+                <p class="unit-card__line">
+                  <span aria-hidden="true">📌</span>
+                  <span data-unit="trapiche" data-unit-field="reference">
+                    Em frente à Madeireira Paraíso e ao Campo de Futebol
+                  </span>
+                </p>
+                <p class="unit-card__line">
+                  <span aria-hidden="true">📱</span>
+                  <span data-unit="trapiche" data-unit-field="phoneDisplay">(22) 98159-3659</span>
+                </p>
+                <div class="unit-card__actions">
+                  <a href="#" class="btn btn--primary" data-unit="trapiche" data-unit-wa-link>
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.6-.8-1.9-.9-.2-.1-.4-.1-.6.1-.2.3-.7.9-.8 1-.2.2-.3.2-.5.1-.3-.1-1.2-.4-2.2-1.4-.8-.7-1.4-1.6-1.5-1.9-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.1.2-.3.2-.4.1-.2 0-.3 0-.5-.1-.1-.6-1.4-.8-1.9-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.1 0 1.2.9 2.4 1 2.6.1.2 1.8 2.8 4.4 3.8.6.3 1.1.4 1.5.5.6.2 1.2.2 1.6.1.5-.1 1.6-.6 1.8-1.3.2-.6.2-1.1.2-1.2-.1-.2-.3-.2-.5-.3z"/><path d="M12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.6 1.4 5.1L2 22l5.1-1.3C8.5 21.5 10.2 22 12 22c5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.2c-1.6 0-3.2-.4-4.5-1.2l-.3-.2-3.3.9.9-3.2-.2-.3c-.9-1.4-1.4-3-1.4-4.7 0-4.6 3.8-8.4 8.4-8.4 4.6 0 8.4 3.8 8.4 8.4 0 4.7-3.7 8.4-8.4 8.4z"/></svg>
+                    <span>Falar no WhatsApp</span>
+                  </a>
+                  <a href="#" class="btn btn--ghost" data-unit="trapiche" data-unit-maps-link>
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" aria-hidden="true"><path d="M12 21s7-6.4 7-11.5A7 7 0 0 0 5 9.5C5 14.6 12 21 12 21Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><circle cx="12" cy="9.5" r="2.4" stroke="currentColor" stroke-width="1.6"/></svg>
+                    <span>Como chegar</span>
+                  </a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <!-- CTA FINAL -->
+        <section class="cta">
+          <div class="container cta__inner">
+            <h2 class="cta__title">Precisa resolver seu problema hoje?</h2>
+            <p class="cta__text">
+              Fale agora com a INFO CENTER, explique o problema do seu aparelho e solicite seu
+              orçamento.
+            </p>
+            <a href="#" class="btn btn--dark btn--lg" data-wa-key="geral">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.6-.8-1.9-.9-.2-.1-.4-.1-.6.1-.2.3-.7.9-.8 1-.2.2-.3.2-.5.1-.3-.1-1.2-.4-2.2-1.4-.8-.7-1.4-1.6-1.5-1.9-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.1.2-.3.2-.4.1-.2 0-.3 0-.5-.1-.1-.6-1.4-.8-1.9-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.1 0 1.2.9 2.4 1 2.6.1.2 1.8 2.8 4.4 3.8.6.3 1.1.4 1.5.5.6.2 1.2.2 1.6.1.5-.1 1.6-.6 1.8-1.3.2-.6.2-1.1.2-1.2-.1-.2-.3-.2-.5-.3z"/><path d="M12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.6 1.4 5.1L2 22l5.1-1.3C8.5 21.5 10.2 22 12 22c5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.2c-1.6 0-3.2-.4-4.5-1.2l-.3-.2-3.3.9.9-3.2-.2-.3c-.9-1.4-1.4-3-1.4-4.7 0-4.6 3.8-8.4 8.4-8.4 4.6 0 8.4 3.8 8.4 8.4 0 4.7-3.7 8.4-8.4 8.4z"/></svg>
+              <span>Falar no WhatsApp agora</span>
+            </a>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="container footer__grid">
+          <div class="footer__brand">
+            <a href="#inicio" class="brand">
+              <img class="brand__logo" data-brand-logo="full" alt="INFO CENTER" />
+            </a>
+            <p class="footer__text">
+              Assistência técnica, celulares, informática e acessórios em um só lugar.
+            </p>
+            <div class="footer__social">
+              <a href="#" data-wa-key="geral" aria-label="WhatsApp">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.6-.8-1.9-.9-.2-.1-.4-.1-.6.1-.2.3-.7.9-.8 1-.2.2-.3.2-.5.1-.3-.1-1.2-.4-2.2-1.4-.8-.7-1.4-1.6-1.5-1.9-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.1.2-.3.2-.4.1-.2 0-.3 0-.5-.1-.1-.6-1.4-.8-1.9-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.1 0 1.2.9 2.4 1 2.6.1.2 1.8 2.8 4.4 3.8.6.3 1.1.4 1.5.5.6.2 1.2.2 1.6.1.5-.1 1.6-.6 1.8-1.3.2-.6.2-1.1.2-1.2-.1-.2-.3-.2-.5-.3z"/><path d="M12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.6 1.4 5.1L2 22l5.1-1.3C8.5 21.5 10.2 22 12 22c5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.2c-1.6 0-3.2-.4-4.5-1.2l-.3-.2-3.3.9.9-3.2-.2-.3c-.9-1.4-1.4-3-1.4-4.7 0-4.6 3.8-8.4 8.4-8.4 4.6 0 8.4 3.8 8.4 8.4 0 4.7-3.7 8.4-8.4 8.4z"/></svg>
+              </a>
+              <a href="#" data-instagram-link aria-label="Instagram">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.6"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="footer__col">
+            <h4>Serviços</h4>
+            <ul>
+              <li><a href="#servicos">Assistência Técnica</a></li>
+              <li><a href="#servicos">Celulares</a></li>
+              <li><a href="#servicos">Informática</a></li>
+              <li><a href="#servicos">Acessórios</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__col">
+            <h4>Unidades</h4>
+            <ul class="footer__units">
+              <li class="footer__unit">
+                <span class="footer__unit-name" data-unit="corregoDoOuro" data-unit-field="shortName">Córrego do Ouro</span>
+                <a href="#" data-unit="corregoDoOuro" data-unit-wa-link data-unit-field="phoneDisplay">(22) 98809-8818</a>
+              </li>
+              <li class="footer__unit">
+                <span class="footer__unit-name" data-unit="trapiche" data-unit-field="shortName">Trapiche</span>
+                <a href="#" data-unit="trapiche" data-unit-wa-link data-unit-field="phoneDisplay">(22) 98159-3659</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer__bottom">
+          <div class="container footer__bottom-inner">
+            <p>&copy; <span id="year"></span> INFO CENTER. Todos os direitos reservados.</p>
+          </div>
+        </div>
+      </footer>
+
+      <div class="unit-modal" id="unitModal" hidden aria-hidden="true">
+        <div class="unit-modal__backdrop" data-modal-close></div>
+        <div class="unit-modal__panel" role="dialog" aria-modal="true" aria-labelledby="unitModalTitle">
+          <button class="unit-modal__close" type="button" data-modal-close aria-label="Fechar">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          </button>
+
+          <h3 class="unit-modal__title" id="unitModalTitle">Qual unidade você deseja atender?</h3>
+          <p class="unit-modal__subtitle">Escolha a unidade mais próxima para continuar no WhatsApp.</p>
+
+          <div class="unit-modal__options">
+            <div class="unit-option">
+              <span class="unit-option__eyebrow">INFO CENTER</span>
+              <h4 class="unit-option__name" data-unit="corregoDoOuro" data-unit-field="shortName">Córrego do Ouro</h4>
+              <p class="unit-option__address" data-unit="corregoDoOuro" data-unit-field="address">
+                Av. Miguel Peixoto Guimarães, nº 349 - Córrego do Ouro, Macaé - RJ
+              </p>
+              <button type="button" class="btn btn--primary unit-option__btn" data-modal-unit="corregoDoOuro">
+                Falar com Córrego do Ouro
+              </button>
+            </div>
+
+            <div class="unit-option">
+              <span class="unit-option__eyebrow">INFO CENTER</span>
+              <h4 class="unit-option__name" data-unit="trapiche" data-unit-field="shortName">Trapiche</h4>
+              <p class="unit-option__address" data-unit="trapiche" data-unit-field="address">
+                RJ-162, nº 767 — Trapiche, Rio de Janeiro - RJ
+              </p>
+              <p class="unit-option__reference" data-unit="trapiche" data-unit-field="reference">
+                Em frente à Madeireira Paraíso e ao Campo de Futebol
+              </p>
+              <button type="button" class="btn btn--primary unit-option__btn" data-modal-unit="trapiche">
+                Falar com Trapiche
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

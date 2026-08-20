@@ -170,6 +170,14 @@ p {
   background: rgba(10, 10, 10, 0.92);
 }
 
+/* Evita que o header fixo (76px) fique sobre o início do conteúdo ao navegar por âncora. */
+#inicio,
+#servicos,
+#sobre,
+#contato {
+  scroll-margin-top: 90px;
+}
+
 .header__inner {
   display: flex;
   align-items: center;
@@ -552,6 +560,12 @@ p {
   background: var(--orange-bg);
   color: var(--orange);
   margin-bottom: 20px;
+  transition: background 0.25s ease, color 0.25s ease;
+}
+
+.card:hover .card__icon {
+  background: var(--orange);
+  color: var(--black);
 }
 
 .card__title {
@@ -588,6 +602,34 @@ p {
 
 .card__cta:hover svg {
   transform: translateX(3px);
+}
+
+.services-cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  margin-top: 48px;
+  padding: 32px 36px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--orange);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+}
+
+.services-cta__title {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.services-cta__text {
+  font-size: 14.5px;
+  max-width: 480px;
+}
+
+.services-cta__btn {
+  flex-shrink: 0;
 }
 
 /* Features (Diferenciais) */
@@ -1082,13 +1124,35 @@ body.modal-open {
     grid-template-columns: 1fr;
   }
 
-  .about__visual {
-    order: -1;
+  /* Hero: sem altura mínima fixa + chips flutuantes reorganizados abaixo do card,
+     em vez de sobrepostos (evita espaço vazio reservado e desaparecimento no mobile). */
+  .hero__visual {
+    min-height: 0;
+    flex-wrap: wrap;
+    gap: 14px 10px;
+  }
+
+  .floating-chip {
+    position: static;
+    inset: auto;
+    padding: 8px 14px;
+    font-size: 12.5px;
   }
 
   .grid--3,
   .grid--4 {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .services-cta {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .services-cta__btn {
+    width: 100%;
+    justify-content: center;
   }
 
   .footer__grid {
@@ -1097,6 +1161,14 @@ body.modal-open {
 
   .footer__brand {
     grid-column: 1 / -1;
+  }
+}
+
+/* Cards de serviço: sempre 1 por linha em telas pequenas/tablet estreito,
+   mesmo na faixa em que .grid--4 ainda mostra 2 colunas. */
+@media (max-width: 768px) {
+  .services-grid {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -1124,7 +1196,14 @@ body.modal-open {
   .nav__list {
     flex-direction: column;
     align-items: flex-start;
-    gap: 20px;
+    gap: 12px;
+    width: 100%;
+  }
+
+  .nav__link {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
   }
 
   .nav__toggle {
@@ -1141,15 +1220,46 @@ body.modal-open {
   }
 
   .hero {
-    padding: 56px 0 72px;
+    padding: 48px 0 56px;
   }
 
   .hero__actions .btn {
     width: 100%;
   }
 
+  .btn--lg {
+    white-space: normal;
+    text-align: center;
+  }
+
   .section {
-    padding: 64px 0;
+    padding: 52px 0;
+  }
+
+  .section__title--left {
+    font-size: 23px;
+    line-height: 1.28;
+  }
+
+  .section__text--left {
+    font-size: 14.5px;
+    line-height: 1.55;
+  }
+
+  .about__stats {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .stat {
+    padding: 10px 16px;
+  }
+
+  .orbit-card {
+    width: min(240px, 68vw);
+    height: min(240px, 68vw);
   }
 
   .grid--2,
@@ -1158,17 +1268,26 @@ body.modal-open {
     grid-template-columns: 1fr;
   }
 
+  .services-cta {
+    padding: 26px 24px;
+  }
+
   .unit-card__actions .btn {
     width: 100%;
+  }
+
+  .cta__inner {
+    padding: 52px 0;
+  }
+
+  .cta__inner .btn {
+    width: 100%;
+    max-width: 360px;
   }
 
   .footer__grid {
     grid-template-columns: 1fr;
     gap: 40px;
-  }
-
-  .floating-chip {
-    display: none;
   }
 
   .unit-modal {

@@ -1115,9 +1115,25 @@ body.modal-open {
 
 /* Responsive */
 @media (max-width: 960px) {
+  .hero {
+    padding: 56px 0 64px;
+  }
+
   .hero__inner {
     grid-template-columns: 1fr;
-    gap: 48px;
+    gap: 36px;
+  }
+
+  .hero__text {
+    margin-bottom: 24px;
+  }
+
+  .hero__actions {
+    margin-bottom: 24px;
+  }
+
+  .hero__badges {
+    gap: 12px 16px;
   }
 
   .about {
@@ -1129,14 +1145,18 @@ body.modal-open {
   .hero__visual {
     min-height: 0;
     flex-wrap: wrap;
-    gap: 14px 10px;
+    gap: 12px 8px;
   }
 
   .floating-chip {
     position: static;
     inset: auto;
-    padding: 8px 14px;
-    font-size: 12.5px;
+    padding: 7px 12px;
+    font-size: 12px;
+  }
+
+  .section {
+    padding: 72px 0;
   }
 
   .grid--3,
@@ -1220,7 +1240,7 @@ body.modal-open {
   }
 
   .hero {
-    padding: 48px 0 56px;
+    padding: 44px 0 52px;
   }
 
   .hero__actions .btn {
@@ -1233,7 +1253,7 @@ body.modal-open {
   }
 
   .section {
-    padding: 52px 0;
+    padding: 48px 0;
   }
 
   .section__title--left {

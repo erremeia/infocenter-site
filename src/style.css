@@ -1140,6 +1140,24 @@ body.modal-open {
     grid-template-columns: 1fr;
   }
 
+  .section__head {
+    margin-bottom: 44px;
+  }
+
+  /* Benefícios (Por que escolher a INFO CENTER?): menos espaço vertical entre eles,
+     sem afetar o gap dos demais grids (cards de serviço, galeria, unidades). */
+  .features-grid {
+    gap: 20px;
+  }
+
+  .services-cta {
+    margin-top: 40px;
+  }
+
+  .footer {
+    padding-top: 56px;
+  }
+
   /* Hero: sem altura mínima fixa + chips flutuantes reorganizados abaixo do card,
      em vez de sobrepostos (evita espaço vazio reservado e desaparecimento no mobile). */
   .hero__visual {
@@ -1243,6 +1261,12 @@ body.modal-open {
     padding: 44px 0 52px;
   }
 
+  .hero__title,
+  .section__title,
+  .cta__title {
+    text-wrap: balance;
+  }
+
   .hero__actions .btn {
     width: 100%;
   }
@@ -1254,6 +1278,22 @@ body.modal-open {
 
   .section {
     padding: 48px 0;
+  }
+
+  .section__head {
+    margin-bottom: 36px;
+  }
+
+  .features-grid {
+    gap: 16px;
+  }
+
+  .feature__icon {
+    margin-bottom: 14px;
+  }
+
+  .footer {
+    padding-top: 44px;
   }
 
   .section__title--left {
@@ -1289,6 +1329,7 @@ body.modal-open {
   }
 
   .services-cta {
+    margin-top: 32px;
     padding: 26px 24px;
   }
 
@@ -1308,6 +1349,7 @@ body.modal-open {
   .footer__grid {
     grid-template-columns: 1fr;
     gap: 40px;
+    padding-bottom: 36px;
   }
 
   .unit-modal {

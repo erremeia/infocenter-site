@@ -183,11 +183,13 @@ function setHeaderScrolled() {
 function closeNav() {
   nav?.classList.remove('is-open')
   navToggle?.setAttribute('aria-expanded', 'false')
+  navToggle?.setAttribute('aria-label', 'Abrir menu')
 }
 
 function toggleNav() {
-  const isOpen = nav?.classList.toggle('is-open')
-  navToggle?.setAttribute('aria-expanded', String(Boolean(isOpen)))
+  const isOpen = Boolean(nav?.classList.toggle('is-open'))
+  navToggle?.setAttribute('aria-expanded', String(isOpen))
+  navToggle?.setAttribute('aria-label', isOpen ? 'Fechar menu' : 'Abrir menu')
 }
 
 navToggle?.addEventListener('click', toggleNav)

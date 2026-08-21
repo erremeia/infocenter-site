@@ -2,18 +2,115 @@
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="icon" type="image/png" href="/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="INFO CENTER — assistência técnica especializada em celulares, computadores e notebooks. Venda de aparelhos, acessórios e serviços de informática com garantia. Solicite seu orçamento pelo WhatsApp." />
+
+    <title>INFO CENTER | Assistência Técnica em Macaé - Celulares, iPhones e Computadores</title>
+    <meta
+      name="description"
+      content="Assistência técnica especializada em Macaé para celulares, iPhones, computadores e notebooks. Diagnóstico técnico, reparos, acessórios e atendimento nas unidades Córrego do Ouro e Trapiche."
+    />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://infocentermacae.com.br/" />
     <meta name="theme-color" content="#0a0a0a" />
-    <title>INFO CENTER — Assistência Técnica e Tecnologia</title>
+
+    <!-- Open Graph -->
+    <meta property="og:site_name" content="INFO CENTER" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:url" content="https://infocentermacae.com.br/" />
+    <meta property="og:title" content="INFO CENTER | Assistência Técnica em Macaé - Celulares, iPhones e Computadores" />
+    <meta
+      property="og:description"
+      content="Assistência técnica especializada em Macaé para celulares, iPhones, computadores e notebooks. Diagnóstico técnico, reparos, acessórios e atendimento nas unidades Córrego do Ouro e Trapiche."
+    />
+    <meta property="og:image" content="https://infocentermacae.com.br/og-image.png" />
+    <meta property="og:image:width" content="877" />
+    <meta property="og:image:height" content="844" />
+    <meta property="og:image:alt" content="Logo da INFO CENTER, assistência técnica em Macaé" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="INFO CENTER | Assistência Técnica em Macaé - Celulares, iPhones e Computadores" />
+    <meta
+      name="twitter:description"
+      content="Assistência técnica especializada em Macaé para celulares, iPhones, computadores e notebooks. Diagnóstico técnico, reparos, acessórios e atendimento nas unidades Córrego do Ouro e Trapiche."
+    />
+    <meta name="twitter:image" content="https://infocentermacae.com.br/og-image.png" />
+
+    <!-- Dados estruturados (Schema.org): organização + duas unidades físicas -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://infocentermacae.com.br/#organization",
+            "name": "INFO CENTER",
+            "url": "https://infocentermacae.com.br/",
+            "logo": "https://infocentermacae.com.br/og-image.png",
+            "description": "Assistência técnica especializada em Macaé - RJ para celulares, iPhones, computadores e notebooks, com diagnóstico técnico, reparos e venda de acessórios.",
+            "sameAs": ["https://instagram.com/iinfocenter_"],
+            "makesOffer": [
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Assistência técnica para celulares e iPhones" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Assistência técnica para computadores e notebooks" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Diagnóstico técnico" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Venda de acessórios para celular e informática" } }
+            ]
+          },
+          {
+            "@type": "ElectronicsStore",
+            "@id": "https://infocentermacae.com.br/#unidade-corrego-do-ouro",
+            "name": "INFO CENTER Córrego do Ouro",
+            "url": "https://infocentermacae.com.br/#contato",
+            "image": "https://infocentermacae.com.br/unidade-corrego-do-ouro.png",
+            "telephone": "+5522988098818",
+            "parentOrganization": { "@id": "https://infocentermacae.com.br/#organization" },
+            "brand": { "@id": "https://infocentermacae.com.br/#organization" },
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Av. Miguel Peixoto Guimarães, nº 349 - Córrego do Ouro",
+              "addressLocality": "Macaé",
+              "addressRegion": "RJ",
+              "addressCountry": "BR"
+            },
+            "areaServed": "Macaé - RJ"
+          },
+          {
+            "@type": "ElectronicsStore",
+            "@id": "https://infocentermacae.com.br/#unidade-trapiche",
+            "name": "INFO CENTER Trapiche",
+            "url": "https://infocentermacae.com.br/#contato",
+            "image": "https://infocentermacae.com.br/unidade-trapiche.png",
+            "telephone": "+5522981593659",
+            "parentOrganization": { "@id": "https://infocentermacae.com.br/#organization" },
+            "brand": { "@id": "https://infocentermacae.com.br/#organization" },
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "RJ-162, nº 767 - Trapiche",
+              "addressLocality": "Macaé",
+              "addressRegion": "RJ",
+              "addressCountry": "BR"
+            },
+            "areaServed": "Macaé - RJ"
+          }
+        ]
+      }
+    </script>
   </head>
   <body>
     <div id="app">
       <header class="header" id="header">
         <div class="container header__inner">
           <a href="#inicio" class="brand">
-            <img class="brand__logo" data-brand-logo="full" alt="INFO CENTER" />
+            <img
+              class="brand__logo"
+              data-brand-logo="full"
+              alt="INFO CENTER - Assistência Técnica em Macaé"
+              width="107"
+              height="36"
+            />
           </a>
 
           <nav class="nav" id="nav">
@@ -45,7 +142,7 @@
             <div class="hero__content">
               <span class="tag">ASSISTÊNCIA TÉCNICA EM MACAÉ</span>
               <h1 class="hero__title">
-                Sua tecnologia em <span class="text-accent">boas mãos</span>.
+                <span class="visually-hidden">Assistência técnica especializada em Macaé. </span>Sua tecnologia em <span class="text-accent">boas mãos</span>.
               </h1>
               <p class="hero__text">
                 Assistência técnica especializada em celulares, iPhones, computadores e notebooks.
@@ -70,13 +167,13 @@
               <div class="device-card">
                 <div class="device-card__dot"></div>
                 <div class="device-card__row">
-                  <svg viewBox="0 0 24 24" width="26" height="26" fill="none"><rect x="7" y="2" width="10" height="20" rx="2.2" stroke="currentColor" stroke-width="1.6"/><path d="M11 19h2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+                  <svg viewBox="0 0 24 24" width="26" height="26" fill="none" aria-hidden="true"><rect x="7" y="2" width="10" height="20" rx="2.2" stroke="currentColor" stroke-width="1.6"/><path d="M11 19h2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
                   <div class="device-card__bars">
                     <span></span><span></span><span></span>
                   </div>
                 </div>
                 <div class="device-card__row">
-                  <svg viewBox="0 0 24 24" width="26" height="26" fill="none"><rect x="2.5" y="4" width="19" height="13" rx="1.6" stroke="currentColor" stroke-width="1.6"/><path d="M8 20.5h8M12 17v3.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+                  <svg viewBox="0 0 24 24" width="26" height="26" fill="none" aria-hidden="true"><rect x="2.5" y="4" width="19" height="13" rx="1.6" stroke="currentColor" stroke-width="1.6"/><path d="M8 20.5h8M12 17v3.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
                   <div class="device-card__bars">
                     <span></span><span></span><span></span>
                   </div>
@@ -87,11 +184,11 @@
                 </div>
               </div>
               <div class="floating-chip floating-chip--top">
-                <svg viewBox="0 0 24 24" width="16" height="16" fill="none"><path d="M12 2 2 7v6c0 5 4 8.5 10 9 6-.5 10-4 10-9V7l-10-5Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="m9 12 2 2 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" aria-hidden="true"><path d="M12 2 2 7v6c0 5 4 8.5 10 9 6-.5 10-4 10-9V7l-10-5Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="m9 12 2 2 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
                 Garantia inclusa
               </div>
               <div class="floating-chip floating-chip--bottom">
-                <svg viewBox="0 0 24 24" width="16" height="16" fill="none"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" aria-hidden="true"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
                 Reparo rápido
               </div>
             </div>
@@ -105,15 +202,15 @@
               <span class="tag">O que fazemos</span>
               <h2 class="section__title">Assistência técnica completa para seus equipamentos</h2>
               <p class="section__text">
-                Realizamos diagnósticos, reparos e manutenção com qualidade e transparência
-                em cada etapa do atendimento.
+                Realizamos diagnóstico técnico, reparos e manutenção de celulares e
+                computadores com qualidade e transparência, aqui em Macaé.
               </p>
             </div>
 
             <div class="grid grid--4 services-grid">
               <article class="card">
                 <div class="card__icon">
-                  <svg viewBox="0 0 24 24" width="26" height="26" fill="none"><rect x="7" y="2" width="10" height="20" rx="2.2" stroke="currentColor" stroke-width="1.6"/><path d="M11 19h2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+                  <svg viewBox="0 0 24 24" width="26" height="26" fill="none" aria-hidden="true"><rect x="7" y="2" width="10" height="20" rx="2.2" stroke="currentColor" stroke-width="1.6"/><path d="M11 19h2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
                 </div>
                 <h3 class="card__title">Celulares e iPhones</h3>
                 <p class="card__text">
@@ -128,7 +225,7 @@
 
               <article class="card">
                 <div class="card__icon">
-                  <svg viewBox="0 0 24 24" width="26" height="26" fill="none"><rect x="2.5" y="4" width="19" height="13" rx="1.6" stroke="currentColor" stroke-width="1.6"/><path d="M8 20.5h8M12 17v3.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+                  <svg viewBox="0 0 24 24" width="26" height="26" fill="none" aria-hidden="true"><rect x="2.5" y="4" width="19" height="13" rx="1.6" stroke="currentColor" stroke-width="1.6"/><path d="M8 20.5h8M12 17v3.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
                 </div>
                 <h3 class="card__title">Computadores e Notebooks</h3>
                 <p class="card__text">
@@ -143,7 +240,7 @@
 
               <article class="card">
                 <div class="card__icon">
-                  <svg viewBox="0 0 24 24" width="26" height="26" fill="none"><path d="M14.7 6.3 17 4a3 3 0 0 1 4 4l-2.3 2.3M9.3 17.7 7 20a3 3 0 0 1-4-4l2.3-2.3M8.5 15.5l7-7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="m14 5 5 5M5 14l5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+                  <svg viewBox="0 0 24 24" width="26" height="26" fill="none" aria-hidden="true"><path d="M14.7 6.3 17 4a3 3 0 0 1 4 4l-2.3 2.3M9.3 17.7 7 20a3 3 0 0 1-4-4l2.3-2.3M8.5 15.5l7-7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="m14 5 5 5M5 14l5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
                 </div>
                 <h3 class="card__title">Diagnóstico e Reparos</h3>
                 <p class="card__text">
@@ -158,7 +255,7 @@
 
               <article class="card">
                 <div class="card__icon">
-                  <svg viewBox="0 0 24 24" width="26" height="26" fill="none"><rect x="4" y="9" width="4" height="7" rx="1.2" stroke="currentColor" stroke-width="1.6"/><rect x="16" y="9" width="4" height="7" rx="1.2" stroke="currentColor" stroke-width="1.6"/><path d="M6 9V8a6 6 0 0 1 12 0v1" stroke="currentColor" stroke-width="1.6"/></svg>
+                  <svg viewBox="0 0 24 24" width="26" height="26" fill="none" aria-hidden="true"><rect x="4" y="9" width="4" height="7" rx="1.2" stroke="currentColor" stroke-width="1.6"/><rect x="16" y="9" width="4" height="7" rx="1.2" stroke="currentColor" stroke-width="1.6"/><path d="M6 9V8a6 6 0 0 1 12 0v1" stroke="currentColor" stroke-width="1.6"/></svg>
                 </div>
                 <h3 class="card__title">Acessórios e Tecnologia</h3>
                 <p class="card__text">
@@ -199,7 +296,7 @@
             <div class="grid grid--4 features-grid">
               <div class="feature">
                 <div class="feature__icon">
-                  <svg viewBox="0 0 24 24" width="24" height="24" fill="none"><path d="M4 20c0-3.3 3.6-5 8-5s8 1.7 8 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="1.6"/></svg>
+                  <svg viewBox="0 0 24 24" width="24" height="24" fill="none" aria-hidden="true"><path d="M4 20c0-3.3 3.6-5 8-5s8 1.7 8 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="1.6"/></svg>
                 </div>
                 <h3 class="feature__title">Atendimento especializado</h3>
                 <p class="feature__text">Equipe técnica preparada para orientar você em cada decisão.</p>
@@ -207,7 +304,7 @@
 
               <div class="feature">
                 <div class="feature__icon">
-                  <svg viewBox="0 0 24 24" width="24" height="24" fill="none"><path d="M12 3v3M12 18v3M3 12h3M18 12h3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><circle cx="12" cy="12" r="6.5" stroke="currentColor" stroke-width="1.6"/><path d="M12 12 15 9.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+                  <svg viewBox="0 0 24 24" width="24" height="24" fill="none" aria-hidden="true"><path d="M12 3v3M12 18v3M3 12h3M18 12h3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><circle cx="12" cy="12" r="6.5" stroke="currentColor" stroke-width="1.6"/><path d="M12 12 15 9.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
                 </div>
                 <h3 class="feature__title">Diagnóstico técnico</h3>
                 <p class="feature__text">Identificação precisa do problema antes de qualquer reparo.</p>
@@ -215,7 +312,7 @@
 
               <div class="feature">
                 <div class="feature__icon">
-                  <svg viewBox="0 0 24 24" width="24" height="24" fill="none"><path d="m12 2.5 8.5 3.4v5.4c0 5-3.5 8.4-8.5 10.2C7 20.7 3.5 17.3 3.5 12.3V5.9L12 2.5Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+                  <svg viewBox="0 0 24 24" width="24" height="24" fill="none" aria-hidden="true"><path d="m12 2.5 8.5 3.4v5.4c0 5-3.5 8.4-8.5 10.2C7 20.7 3.5 17.3 3.5 12.3V5.9L12 2.5Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
                 </div>
                 <h3 class="feature__title">Qualidade e confiança</h3>
                 <p class="feature__text">Peças selecionadas e processos que priorizam a durabilidade.</p>
@@ -223,7 +320,7 @@
 
               <div class="feature">
                 <div class="feature__icon">
-                  <svg viewBox="0 0 24 24" width="24" height="24" fill="none"><path d="M12 2 2 7v6c0 5 4 8.5 10 9 6-.5 10-4 10-9V7l-10-5Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="m9 12 2 2 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  <svg viewBox="0 0 24 24" width="24" height="24" fill="none" aria-hidden="true"><path d="M12 2 2 7v6c0 5 4 8.5 10 9 6-.5 10-4 10-9V7l-10-5Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="m9 12 2 2 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
                 </div>
                 <h3 class="feature__title">Garantia nos serviços</h3>
                 <p class="feature__text">Tranquilidade após o reparo, com garantia em todo serviço realizado.</p>
@@ -242,11 +339,12 @@
               </h2>
               <p class="section__text section__text--left">
                 A INFO CENTER nasceu para ser o ponto de confiança de quem precisa de soluções em
-                tecnologia.
+                tecnologia em Macaé - RJ.
               </p>
               <p class="section__text section__text--left">
-                Trabalhamos com assistência técnica para celulares, computadores e notebooks,
-                além de venda de aparelhos e acessórios.
+                Trabalhamos com assistência técnica para celulares, iPhones, computadores e
+                notebooks, atendendo nas unidades Córrego do Ouro e Trapiche, além de venda de
+                aparelhos e acessórios.
               </p>
               <p class="section__text section__text--left">
                 Nosso compromisso é oferecer diagnóstico transparente, atendimento próximo e
@@ -255,15 +353,15 @@
 
               <div class="about__stats">
                 <div class="stat">
-                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none"><path d="M14.7 6.3 17 4a3 3 0 0 1 4 4l-2.3 2.3M9.3 17.7 7 20a3 3 0 0 1-4-4l2.3-2.3M8.5 15.5l7-7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" aria-hidden="true"><path d="M14.7 6.3 17 4a3 3 0 0 1 4 4l-2.3 2.3M9.3 17.7 7 20a3 3 0 0 1-4-4l2.3-2.3M8.5 15.5l7-7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
                   <span>Reparo especializado</span>
                 </div>
                 <div class="stat">
-                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none"><path d="M12 2 2 7v6c0 5 4 8.5 10 9 6-.5 10-4 10-9V7l-10-5Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="m9 12 2 2 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" aria-hidden="true"><path d="M12 2 2 7v6c0 5 4 8.5 10 9 6-.5 10-4 10-9V7l-10-5Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="m9 12 2 2 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
                   <span>Serviços com garantia</span>
                 </div>
                 <div class="stat">
-                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none"><path d="M4 20c0-3.3 3.6-5 8-5s8 1.7 8 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="1.6"/></svg>
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" aria-hidden="true"><path d="M4 20c0-3.3 3.6-5 8-5s8 1.7 8 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="1.6"/></svg>
                   <span>Atendimento próximo</span>
                 </div>
               </div>
@@ -272,7 +370,14 @@
             <div class="about__visual" aria-hidden="true">
               <div class="orbit-card">
                 <div class="orbit-card__ring"></div>
-                <img class="orbit-card__icon" data-brand-logo="icon" alt="" />
+                <img
+                  class="orbit-card__icon"
+                  data-brand-logo="icon"
+                  alt=""
+                  width="54"
+                  height="52"
+                  loading="lazy"
+                />
               </div>
             </div>
           </div>
@@ -294,7 +399,7 @@
                 <div class="gallery-card__media">
                   <img
                     data-unit-photo="corregoDoOuro"
-                    alt="Fachada da unidade INFO CENTER Córrego do Ouro"
+                    alt="Fachada da INFO CENTER em Córrego do Ouro, Macaé"
                     loading="lazy"
                     decoding="async"
                   />
@@ -323,7 +428,7 @@
                 <div class="gallery-card__media">
                   <img
                     data-unit-photo="trapiche"
-                    alt="Fachada da unidade INFO CENTER Trapiche"
+                    alt="Unidade INFO CENTER Trapiche em Macaé"
                     loading="lazy"
                     decoding="async"
                   />
@@ -446,10 +551,18 @@
         <div class="container footer__grid">
           <div class="footer__brand">
             <a href="#inicio" class="brand">
-              <img class="brand__logo" data-brand-logo="full" alt="INFO CENTER" />
+              <img
+                class="brand__logo"
+                data-brand-logo="full"
+                alt="INFO CENTER - Assistência Técnica em Macaé"
+                width="119"
+                height="40"
+                loading="lazy"
+              />
             </a>
             <p class="footer__text">
-              Assistência técnica, celulares, informática e acessórios em um só lugar.
+              Assistência técnica para celulares, iPhones e computadores em Macaé - RJ, com
+              unidades em Córrego do Ouro e Trapiche.
             </p>
             <div class="footer__social">
               <a href="#" data-wa-key="geral" aria-label="WhatsApp">
@@ -462,7 +575,7 @@
           </div>
 
           <div class="footer__col">
-            <h4>Serviços</h4>
+            <h3>Serviços</h3>
             <ul>
               <li><a href="#servicos">Assistência Técnica</a></li>
               <li><a href="#servicos">Celulares</a></li>
@@ -472,7 +585,7 @@
           </div>
 
           <div class="footer__col">
-            <h4>Unidades</h4>
+            <h3>Unidades</h3>
             <ul class="footer__units">
               <li class="footer__unit">
                 <span class="footer__unit-name" data-unit="corregoDoOuro" data-unit-field="shortName">Córrego do Ouro</span>

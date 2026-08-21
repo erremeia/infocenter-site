@@ -51,6 +51,16 @@ a {
   text-decoration: none;
 }
 
+/* Foco visível (navegação por teclado) na cor da marca, sem alterar o
+   estado padrão/hover de nenhum elemento. */
+a:focus-visible,
+button:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid var(--orange);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
 ul {
   list-style: none;
   margin: 0;
@@ -78,6 +88,20 @@ p {
 
 .text-accent {
   color: var(--orange);
+}
+
+/* Conteúdo presente no DOM (lido por leitores de tela e buscadores) mas
+   removido visualmente quando já é comunicado de outra forma no design. */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 .tag {
@@ -526,10 +550,6 @@ p {
   gap: 24px;
 }
 
-.grid--3 {
-  grid-template-columns: repeat(3, 1fr);
-}
-
 .grid--4 {
   grid-template-columns: repeat(4, 1fr);
 }
@@ -919,7 +939,7 @@ p {
   transform: translateY(-2px);
 }
 
-.footer__col h4 {
+.footer__col h3 {
   font-size: 15px;
   margin-bottom: 18px;
   color: var(--white);
@@ -1177,7 +1197,6 @@ body.modal-open {
     padding: 72px 0;
   }
 
-  .grid--3,
   .grid--4 {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -1323,7 +1342,6 @@ body.modal-open {
   }
 
   .grid--2,
-  .grid--3,
   .grid--4 {
     grid-template-columns: 1fr;
   }

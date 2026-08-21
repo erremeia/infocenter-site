@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://infocentermacae.com.br/sitemap.xml
